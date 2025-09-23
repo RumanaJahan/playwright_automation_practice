@@ -9,7 +9,7 @@ test.describe("Contact Us form functionality", () => {
       await contactuspage.launchContactUs(page);
    })
 
-   test.only('should submit contact us form successfully with valid inputs', async () => {
+   test('should submit contact us form successfully with valid inputs', async () => {
       await contactuspage.submitContactForm(contactUsData.contactUsInput.validData);
    })
 
