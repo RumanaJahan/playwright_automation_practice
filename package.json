@@ -1,0 +1,26 @@
+{
+  "name": "rumautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "userlogin": "npx playwright test --config=playwright.config.js tests/userLogin.test.js --headed",
+    "userlogout": "npx playwright test --config=playwright.config.js tests/userLogout.test.js --headed",
+    "userregistration": "npx playwright test --config=playwright.config.js tests/userRegistration.test.js --headed",
+    "userdelete": "npx playwright test --config=playwright.config.js tests/userDelete.test.js --headed",
+    "usertestCasePath": "npx playwright test --config=playwright.config.js tests/testCasePath.test.js --headed",
+    "userexisting": "npx playwright test --config=playwright.config.js tests/existingUserRegister.test.js --headed",
+    "contactus": "npx playwright test --config=playwright.config.js tests/contactUs.test.js --headed",
+    "searchproduct": "npx playwright test /tests/searchProduct.test.js  --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2"
+  }
+}
