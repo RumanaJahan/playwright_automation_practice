@@ -10,7 +10,7 @@ test.describe("login functionality", () => {
       await loginpage.launchLogin(page);
    })
 
-   test.only('user should login successfully with valid credentials', async () => {
+   test('user should login successfully with valid credentials', async () => {
       await loginpage.validLogin(userCredentials.credentials.validUser);
    })
 
